@@ -49,7 +49,7 @@ func main() {
 
 	// Index Handler
 	e.GET("/", func(c echo.Context) error {
-		file, _ := os.ReadFile("templates/index.html")
+		file, _ := os.ReadFile("templates/index.php")
 		return c.HTML(200, string(file))
 	})
 
@@ -82,7 +82,7 @@ func main() {
 
 	// Admin Handler
 	e.GET("/login", func(c echo.Context) error {
-		file, _ := os.ReadFile("templates/login.html")
+		file, _ := os.ReadFile("templates/login.php")
 		return c.HTML(200, string(file))
 	})
 
